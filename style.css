@@ -38,6 +38,7 @@ html, body {
 }
 .fruits {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
@@ -49,7 +50,7 @@ html, body {
 }
 .image {
     height: 150px;
-    width: 150px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,3 +58,24 @@ html, body {
 .image1 {background-image: url("1.jpg");}
 .image2 {background-image: url("2.jpg");}
 .image3 {background-image: url("3.jpeg")}
+
+@media only screen and (min-width:900px) {
+
+    .fruits{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+    .fruit{
+        width: 20%;
+    }
+    .navbar{
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+    .burger{
+        display: none;
+    }
